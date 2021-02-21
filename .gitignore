@@ -102,3 +102,4 @@ ENV/
 
 crontab
 sqlite.db
+.idea/
