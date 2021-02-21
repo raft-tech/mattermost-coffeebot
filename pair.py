@@ -1,16 +1,6 @@
 from mattermostdriver import Driver
 
 from coffeebot import config, utils
-import netrc
-import requests
-
-class TokenAuth( requests.auth.AuthBase ) :
-    def __call__( self, r ) :
-        # Implement my authentication
-        mmHost = 'mattermost.host.in.netrc'
-        (login, account, password) = netrc.netrc().authenticators( mmHost )
-        r.headers[ 'Authorization' ] = "Bearer %s" % config.PASSWORD
-        return r
 
 def main():
     print("Creating Mattermost Driver...")
