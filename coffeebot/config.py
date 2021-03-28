@@ -23,4 +23,12 @@ CHANNEL_NAME = os.getenv('COFFEEBOT_MATTERMOST_CHANNEL')
 
 MESSAGE = """
 You have been matched to meet up! Please respond with your availabilities :)
+
+Some questions to get you going:
+
+- Discuss what you both are working on
+- Can you coffee partner help you with something that you may be stuck on?
+- How are you doing as a human?
+
+Have a great week! :raft:
 """
